@@ -51,7 +51,7 @@ export default function Home() {
         setFilterData={setFilterData}
       />
 
-      <div className="flex flex-col md:flex-row gap-4 px-4 md:px-6 py-4 h-screen relative overflow-y-auto scroll-bar-hidden">
+      <div className="flex flex-col md:flex-row gap-4 px-4 md:px-6 py-4 h-screen relative overflow-y-auto scroll-bar-hidden pb-20">
         {/* Sidebar Filters */}
         <div
           className={`md:w-1/3 lg:w-1/4 w-full md:block ${
@@ -87,24 +87,24 @@ export default function Home() {
         </div>
 
         {/* Pagination */}
-        <div className=" fixed bottom-4 left-0 right-0 z-50 flex justify-center">
-          <div className="bg-white shadow-lg px-6 py-2 rounded-full flex items-center gap-4">
+        <div className="  fixed bottom-4 left-0  right-0 z-50 flex justify-center">
+          <div className="bg-black shadow-lg px-6 py-2 rounded-full flex items-center gap-4">
             <button
               disabled={page === 1}
               onClick={() => setPage((p) => p - 1)}
-              className="px-4 py-2 bg-blue-600 text-white rounded-full disabled:bg-blue-300 transition"
+              className="px-4 py-2 bg-orange-300 cursor-pointer text-black rounded-full disabled:bg-white transition"
             >
               Prev
             </button>
 
-            <span className="text-gray-800 font-medium">
+            <span className="text-white font-medium">
               Page {page} of {totalPages}
             </span>
 
             <button
               disabled={page === totalPages}
               onClick={() => setPage((p) => p + 1)}
-              className="px-4 py-2 bg-blue-600 text-white rounded-full disabled:bg-blue-300 transition"
+              className="px-4 py-2 bg-orange-300 cursor-pointer text-black rounded-full disabled:bg-white transition"
             >
               Next
             </button>

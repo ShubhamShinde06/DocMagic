@@ -36,7 +36,7 @@ export default function DoctorCard({
 
   return (
     <>
-      <div className="flex items-center justify-between text-base sm:text-2xl ">
+      <div className="flex items-center justify-between text-base sm:text-2xl">
         <h1 className=" hidden md:block">
           Consult General Physicians Online - Internal <br /> Medicine
           Specialists
